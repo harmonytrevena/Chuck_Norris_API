@@ -9,15 +9,46 @@
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
 
-    <body>
-        <div>
+    <main class="wrapper">
+
+
+    <!-- Header -->
+    <header class="header">
+        <h1>CHUCK NORRIS QUOTES</h1>
+    </header>
+
+    <!-- Content -->
+    <div class="flex-container">
+        <section class="sub-content-upper">
+            <h2>Content.</h2>
             <p id ="chuckSays"></p>
             <button id="refreshQuote">Click Me</button>
-            <form></form>
+            <form>
+                <label>
+                Choose a Category:
+                <input type="text" id="categoryInput" value="" placeholder="categoryChoice" required/>
+                </label>
+                <button type="submit" id="submitForm">Get a Quote</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="background"> 
+            <img src="images/Chuck_Image_Updated.png">
         </div>
-    </body>
+    </section>
 
-</html>
-<script src="scripts/index.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus est exemplis hoc facere longius.
+        </p>
+    </footer>
+    </main>     
 
+    <!-- JS Scripts -->
+    <script src="scripts/get.js"></script>
+    <script src="scripts/index.js"></script>
 </html>

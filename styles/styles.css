@@ -1,13 +1,125 @@
 *, *:before, *:after {
     box-sizing: border-box;
-}
-
-html {
+  }
+  
+  html {
     font-size: 16px;
-}
-
-body {
-    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    background: #ffffff;
     margin: 0;
+    padding: 20px;
+    color: #ffffff;
+  }
+  
+  main, header, section, footer {
+    margin: 0;
+    padding: 10px;
+    border: none;
+    color: #ffffff;
+  }
+  
+  main {
+    background: #ffffff;
+  }
+  
+  ul, nav {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+    text-align: center;
+    margin: 0;
+    padding: 20px 20px;
+    color: #000000;
+  }
+  
+  h2 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    text-align: left;
+    margin: 0;
+    padding: 30px 30px;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .wrapper {
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-around;
+    display: flex;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .header {
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .background {
+    background-image: 'images/Chuck_Image_Updated.png';
+    max-width: 100%;
     padding: 0;
-}
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .content {
+    background: #f0efec;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .sub-content-upper {
+    flex: 1;
+    border: none;
+    background: #fdf0ec;
+    border-top: 1rem solid #ffffff;
+    border-bottom: 1rem solid #ffffff;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .sub-content-lower {
+    flex: 1;
+    border: none;
+    background: #98bec8;
+    border-top: 1rem solid #ffffff;
+    border-bottom: 1rem solid #ffffff;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  @media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }    
+  }
+  
+  .footer { 
+    background: #c1605c;
+    border-top: 1rem solid #ffffff;
+    border-bottom: 1rem solid #ffffff;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+  }
