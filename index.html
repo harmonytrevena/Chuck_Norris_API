@@ -17,52 +17,32 @@
         <h1>CHUCK NORRIS QUOTES</h1>
     </header>
 
-    <!-- Content -->
-    <div class="flex-container">
-        <section class="sub-content-upper">
-            <h2>Content.</h2>
-            <p id ="chuckSays"></p>
-            <button id="refreshQuote">Click Me</button>
-            <form id="getChuckQuotes">
-                <label>
-                Choose a Category:
-                 <!-- <input type="text" id="categoryInput" value="" placeholder="categoryChoice" required/> -->
-                <select id="categoryInput" class="capitalize"></select>
-
-                    <!-- <option value="dev">Dev</option>
-                    <option value="animal">Animal</option>
-                    <option value="career">Career</option>
-                    <option value="celebrity">Celebrity</option>
-                    <option value="fashion">Fashion</option>
-                    <option value="food">Food</option>
-                    <option value="history">History</option>
-                    <option value="money">Money</option>
-                    <option value="movie">Movie</option>
-                    <option value="music">Music</option>
-                    <option value="science">Science</option>
-                    <option value="sport">Sport</option>
-                    <option value="travel">Travel</option>
-                </select> -->
-                
-                </label>
-                <button type="submit" id="submitForm">Get a Quote</button>
-            </form>
-        </section>
-    </div>
-
     <!-- Hero -->
-    <section class="hero">
-        <div class="background"> 
-            <img src="images/Chuck_Image_Updated.png">
+    <section> 
+        <div class="image-wrapper">
+            <img src="images/Chuck_Image_Updated.png"/>
         </div>
     </section>
 
+    <!-- Content -->
+    <div class="flex-container">
+        <section class="sub-content-upper">
+            <p id ="chuckSays"></p>
+            <button class="button" id="refreshQuote">Click Me</button>
+        </section>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sumenda potius quam expetenda. Nihil opus est exemplis hoc facere longius.
-        </p>
+        <p>Pick a New Category: </p>
+        <form id="getChuckQuotes">
+            <label>
+            <select id="categoryInput" class="capitalize"></select>
+            </label>
+            <button class="button" type="submit" id="submitForm">Get a Quote</button>
+        </form>
     </footer>
+    
     </main>     
 
     <!-- JS Scripts -->
