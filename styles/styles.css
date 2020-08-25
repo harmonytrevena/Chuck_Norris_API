@@ -64,6 +64,10 @@
     color: #000000;
   }
   
+  .capitalize {
+    text-transform: capitalize;
+  }
+
   .header {
     background: #ffffff;
     color: #000000;
